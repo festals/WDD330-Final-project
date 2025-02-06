@@ -1,0 +1,14 @@
+{
+  "name": "wdd330-final-project",
+  "version": "1.0.0",
+  "description": "\"Quend Activity\" This web app is for the activity around the town of Quend Plage Les Pins, you can book and leave review, share your plans and find new spots for the summer with your family.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}
