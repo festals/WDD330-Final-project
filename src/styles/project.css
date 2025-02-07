@@ -105,6 +105,55 @@ main h1{
 }
 
 
+/*rating form*/ 
+#rating {
+    background-color: var(--light-brown);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+#rating h2 {
+    font-size: 24px;
+    color: #333;
+}
+  
+#rating p {
+font-size: 16px;
+color: #555;
+}
+
+#rating form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+#rating  input[type="email"], input[type="number"], select {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ddd;
+font-size: 16px;
+}
+
+#rating  button {
+padding: 10px;
+border: none;
+background-color: var(--blue);
+color: white;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#rating  button:hover {
+background-color: var(--brown);
+color: var(--blue);
+}
+
 
 /* footer */
 footer{

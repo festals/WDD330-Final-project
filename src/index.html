@@ -30,10 +30,26 @@
         <section class="hero">
             <div id="call">
                 <nav class ="CTA">
-                    <a href="share.html">Leave a review!</a>
+                    <a href="index.html#rating">Leave a rating!</a>
                 </nav>
             </div>
         </section>
+        <div id="rating">
+            <h2>Rate the Activities!</h2>
+            <p>Note 1 to 5 your favorite place to let people know the best place to go.</p>
+            <form action="thank-you.html" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <label for="activities">Choose an activity:</label>
+                <select id="activities" name="activities" required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <input type="number" name="note" max="5" min="1" placeholder="1 to 5" required>
+                <button type="submit">Rate them</button>
+            </form>
+        </div>
     </main>
 
     <footer>
