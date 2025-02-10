@@ -17,6 +17,7 @@ header{
 }
 
 h1, p{
+    font-family: var(--heading-font);
     padding-left:5px;
 }
 
@@ -71,6 +72,7 @@ main h1{
 }
 
 #call{
+    font-family: var(--paragraph-font);
     position : absolute;
     display : flex;  
     top: 50%;
@@ -113,6 +115,7 @@ main h1{
     text-align: center;
     color: var(--dark-grey);
     padding-left: 0;
+    font-family: var(--heading-font);
 }
 
 .product-grid img{
@@ -154,44 +157,53 @@ main h1{
     margin: 0 auto;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
 }
   
 #rating h2 {
     font-size: 24px;
     color: #333;
+    font-family: var(--heading-font);
 }
   
 #rating p {
-font-size: 16px;
-color: #555;
+    font-size: 16px;
+    color: black;
+    font-family: var(--paragraph-font);
 }
 
 #rating form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #rating  input[type="email"], input[type="number"], select {
-padding: 10px;
-border-radius: 5px;
-border: 1px solid #ddd;
-font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+}
+
+#rating label{
+    font-family: var(--paragraph-font);
 }
 
 #rating  button {
-padding: 10px;
-border: none;
-background-color: var(--blue);
-color: white;
-font-size: 16px;
-border-radius: 5px;
-cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--heading-font);
 }
 
 #rating  button:hover {
-background-color: var(--brown);
-color: var(--blue);
+    background-color: var(--brown);
+    color: var(--blue);
 }
 
 
