@@ -13,17 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles/project.css">
-    <script></script>
+    <script src="scripts/main.js" type="module"></script>
 </head>
 <body>
-    <header>
-        <div class="head">
-            <img src="images/house.jpg" alt="Quend plage">
-            <div>
-                <h1>Quend Plage</h1>
-                <p>Activities</p>
-            </div>
-        </div>
+    <header id="mainheader">
+        
     </header>
 
     <main>
@@ -33,6 +27,46 @@
                     <a href="index.html#rating">Leave a rating!</a>
                 </nav>
             </div>
+        </section>
+        <section class="products">
+            <ul class="product-grid">
+              <li>
+                <a href="product-listing/index.html?category=tents">
+                  <img
+                    src="images/noun_Tent_3544767.svg"
+                    alt="Tent Icon from Noun Project: Mustofa Bayu"
+                  />
+                  <h2>Tents</h2>
+                </a>
+              </li>
+              <li>
+                <a href="product-listing/index.html?category=backpacks">
+                  <img
+                    src="images/noun_carrier bag_3544771.svg"
+                    alt="Backpack Icon from Noun Project: Mustofa Bayu"
+                  />
+                  <h2>Backpacks</h2>
+                </a>
+              </li>
+              <li>
+                <a href="product-listing/index.html?category=sleeping-bags">
+                  <img
+                    src="images/noun_Sleeping Bag_3544775.svg"
+                    alt="Sleeping Bag Icon from Noun Project: Mustofa Bayu"
+                  />
+                  <h2>Sleeping Bags</h2>
+                </a>
+              </li>
+              <li>
+                <a href="product-listing/index.html?category=hammocks">
+                  <img
+                    src="images/noun_Hammock_791143.svg"
+                    alt="Hammock Icon from Noun Project: Paul Richard"
+                  />
+                  <h2>Hammocks</h2>
+                </a>
+              </li>
+            </ul>
         </section>
         <div id="rating">
             <h2>Rate the Activities!</h2>
@@ -52,16 +86,7 @@
         </div>
     </main>
 
-    <footer>
-        <p>Quend Activities</p>
-             
-
-        <div class="animation"><p class="seal">🦭</p><p class="wave">🌊</p><p class="seal2">🦭</p></div>
-
-        <p>WDD330 Class Project
-        <br>Sophie Festal
-        <br>©️<span id="currentyear"></span> Quend Activities
-        <br>Last modification: <span id="lastModified"></span></p>
+    <footer id="mainfooter">
     </footer>
     
 </body>

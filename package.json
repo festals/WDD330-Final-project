@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "\"Quend Activity\" This web app is for the activity around the town of Quend Plage Les Pins, you can book and leave review, share your plans and find new spots for the summer with your family.",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
