@@ -1,3 +1,4 @@
-import { loadHeaderFooter } from "./utile.mjs";
+import { getDates, loadHeaderFooter } from "./utile.mjs";
 
 loadHeaderFooter();
+getDates();

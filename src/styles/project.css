@@ -65,15 +65,15 @@ main h1{
     background-repeat : no-repeat;
     background-size : cover;
     background-position : center;
-    margin-bottom : 2rem;
+    margin-bottom : 0.5rem;
     position : relative;
-    height:400px;
+    height:200px;  /*400*/
 }
 
 #call{
     position : absolute;
     display : flex;  
-    top: 70%;
+    top: 50%;
     left: 70%;
     justify-content:center;
     align-items : center;
@@ -104,6 +104,46 @@ main h1{
     transform : scale(1.09);
 }
 
+/* product grid styles */
+.product-grid {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark-grey);
+    padding-left: 0;
+}
+
+.product-grid img{
+    width: 200px;
+}
+
+.product-grid > li {
+    width: 250px;
+    padding: 0.5em;
+    margin: 1em;
+
+}
+
+.product-grid h2 {
+    margin: 0;
+    font-size: 1.3em;
+    border-radius: 8px;
+
+}
+
+.product-grid a {
+    text-decoration: none;
+    transition : color 0.8s, font-size 0.5s, transform 0.3s;
+    color:black;
+}
+
+.product-grid a:hover {
+    color:white;
+    transform : scale(1.09);
+}
+  
 
 /*rating form*/ 
 #rating {
@@ -163,6 +203,10 @@ footer{
     padding-left:10px;
 }
 
+footer p {
+    text-align: center;
+}
+
 .seal{
     animation: wave 2s alternate infinite ;  
 }
@@ -175,6 +219,7 @@ footer{
 
 .animation{
     display: flex;
+    align-self: center;
 }
 
 
