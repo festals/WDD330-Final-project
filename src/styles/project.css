@@ -107,7 +107,7 @@ main h1{
 }
 
 /* product grid styles */
-.product-grid {
+.activity-grid {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -118,31 +118,31 @@ main h1{
     font-family: var(--heading-font);
 }
 
-.product-grid img{
+.activity-grid img{
     width: 200px;
 }
 
-.product-grid > li {
+.activity-grid > li {
     width: 200px;
     padding: 0.5em;
     margin: 1em;
 
 }
 
-.product-grid h2 {
+.activity-grid h2 {
     margin: 0;
     font-size: 1.3em;
     border-radius: 8px;
 
 }
 
-.product-grid a {
+.activity-grid a {
     text-decoration: none;
     transition : color 0.8s, font-size 0.5s, transform 0.3s;
     color:black;
 }
 
-.product-grid a:hover {
+.activity-grid a:hover {
     color:white;
     transform : scale(1.09);
 }

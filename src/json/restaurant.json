@@ -1,0 +1,66 @@
+[
+    {
+        "Name":"Jules",
+        "Description": "Family Restaurant",
+        "Open Hours": "11H30 AM - 9 PM",
+        "For children": true,
+        "Prices": "$20-$30",
+        "Adress":"72 Avenue Adéodat Vasseur, 80120 Quend-Plage",
+        "Phone":"06 13 57 31 00",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/fam-int.jpg",
+            "PrimaryTwo": "../images/fam-plat.jpg",
+            "PrimaryThree": "../images/fam-hamburger.jpg",       
+            "PrimaryFour": "../images/fam-food.jpg"        
+            }
+    },
+    {
+        "Name":"Le Nautilus",
+        "Description": "Fish Restaurant",
+        "Open Hours": "11H30 AM - 2 PM, 6 PM - 9 PM",
+        "For children": false,
+        "Prices": "$30-$45",
+        "Adress":"81 Avenue Vasseur, 80120 Quend-Plage",
+        "Phone":"03 22 24 90 55",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/fish-ext.jpg",
+            "PrimaryTwo": "../images/fish-huitre.jpg",
+            "PrimaryThree": "../images/fish-moule.jpg",
+            "PrimaryFour": "../images/fish-noix.jpg"                
+        }
+    },
+   {
+        "Name":"Babybouff",
+        "Description": "Ice Cream Shop",
+        "Open Hours": "10 AM - 1 AM",
+        "For children": true,
+        "Prices": "$2-$7",
+        "Adress":"57 Avenue Adeodat Vasseur, 80120 Quend-Plage",
+        "Phone":"06 75 87 67 10",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/glace-pot.jpg",
+            "PrimaryTwo": "../images/glace-vitr.jpg",
+            "PrimaryThree": "../images/glace-vitr-1.jpg",
+            "PrimaryFour": "../images/glace.jpg"              
+        }
+    },
+    {
+        "Name":"Le Napoli",
+        "Description": "Pizzeria",
+        "Open Hours": "1H30 AM - 8 PM",
+        "For children": true,
+        "Prices": "$12-$18",
+        "Adress":"52 avenue Vasseur, 80120 Quend-Plage France",
+        "Phone":" 06 75 19 77 34",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/pizza-long.jpg",
+            "PrimaryTwo": "../images/pizz-huile.jpg",
+            "PrimaryThree": "../images/pizza-ext.jpg",
+            "PrimaryFour": "../images/pizza-four.jpg"               
+        }
+    }
+]

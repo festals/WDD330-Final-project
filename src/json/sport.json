@@ -1,0 +1,66 @@
+[
+    {
+        "Name":"Sentier du Royon",
+        "Description": "Hiking Road in the Sand",
+        "Open Hours": "All the Time",
+        "For children": true,
+        "Prices": "Free Entry",
+        "Adress":"Start at the Parking facing the Beach",
+        "Phone":"N/A",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/rando.jpg",
+            "PrimaryTwo": "../images/rando-1.jpg",
+            "PrimaryThree": "../images/rando-dune.jpg",       
+            "PrimaryFour": "../images/rando-neige.jpg"        
+            }
+    },
+    {
+        "Name":"Ozone",
+        "Description": "Sand Yachting School",
+        "Open Hours": "8 AM - 19 PM",
+        "For children": true,
+        "Prices": "$50-$150",
+        "Adress":"8 Rue Basile Capet , 80120 QUEND",
+        "Phone":"03 22 23 37 92",
+        "Website":"https://www.ozone-charavoile.com/",
+        "Images": {
+            "PrimaryOne": "../images/char-groupe.jpg",
+            "PrimaryTwo": "../images/char-groupe-1.jpg",
+            "PrimaryThree": "../images/char-eau.jpg",
+            "PrimaryFour": "../images/char-tombe.jpg"                
+        }
+    },
+   {
+        "Name":"Arbres & Aventures",
+        "Description": "Tree Top Adventure Park",
+        "Open Hours": "9 AM - 6 PM",
+        "For children": true,
+        "Prices": "$28-$12",
+        "Adress":"6 avenue Henri Renard, 80120 Quend-Plage",
+        "Phone":"03 22 20 48 52",
+        "Website":"www.arbres-aventures.com",
+        "Images": {
+            "PrimaryOne": "../images/accro-1.jpg",
+            "PrimaryTwo": "../images/accro-2.jpg",
+            "PrimaryThree": "../images/accro-3.jpg",
+            "PrimaryFour": "../images/accro-4.jpg"              
+        }
+    },
+    {
+        "Name":"The Beach",
+        "Description": "The Beach with liveguard",
+        "Open Hours": "10 AM - 6 PM",
+        "For children": true,
+        "Prices": "Free Entry",
+        "Adress":"AV de la Mer, 80120 Quend-Plage",
+        "Phone":" N/A",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "../images/plage-surf.jpg",
+            "PrimaryTwo": "../images/plage-paddle.jpg",
+            "PrimaryThree": "../images/plage-sauveteur.jpg",
+            "PrimaryFour": "../images/plage-voile.jpg"               
+        }
+    }
+]

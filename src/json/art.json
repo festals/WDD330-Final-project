@@ -1,0 +1,34 @@
+[
+    {
+    "Name":"Pax",
+    "Description": "Movie Theatre",
+    "Open Hours": "10 AM - 8H30 PM ",
+    "For children": true,
+    "Prices": "$4-$5",
+    "Adress":"Place Charles de Gaulle,80120 Quend",
+    "Phone":"N/A",
+    "Website":"https://cinema-lepax.fr",
+    "Images": {
+        "PrimaryOne": "/images/cinema-ext.jpg",
+        "PrimaryTwo": "../images/cinema-int.jpg",
+        "PrimaryThree": "../images/cinema-affiches.jpg"        
+        }
+
+    },
+    {
+        "Name":"Art le Quend",
+        "Description": "Art Galerie",
+        "Open Hours": "2 PM - 7 PM",
+        "For children": true,
+        "Prices": "Free entry",
+        "Adress":"Salle paroissiale 80120 Quend - Somme - Hauts-de-France",
+        "Phone":" 06 01 23 88 91",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "/images/art-1.jpg",
+            "PrimaryTwo": "../images/art-2.jpg",
+            "PrimaryThree": "../images/art-3.jpg"        
+            }
+    
+        }
+]
