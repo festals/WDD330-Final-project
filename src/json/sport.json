@@ -1,9 +1,9 @@
-[
+{"sport":[
     {
         "Name":"Sentier du Royon",
         "Description": "Hiking Road in the Sand",
-        "Open Hours": "All the Time",
-        "For children": true,
+        "Hours": "All the Time",
+        "Children": true,
         "Prices": "Free Entry",
         "Adress":"Start at the Parking facing the Beach",
         "Phone":"N/A",
@@ -18,8 +18,8 @@
     {
         "Name":"Ozone",
         "Description": "Sand Yachting School",
-        "Open Hours": "8 AM - 19 PM",
-        "For children": true,
+        "Hours": "8 AM - 19 PM",
+        "Children": true,
         "Prices": "$50-$150",
         "Adress":"8 Rue Basile Capet , 80120 QUEND",
         "Phone":"03 22 23 37 92",
@@ -34,8 +34,8 @@
    {
         "Name":"Arbres & Aventures",
         "Description": "Tree Top Adventure Park",
-        "Open Hours": "9 AM - 6 PM",
-        "For children": true,
+        "Hours": "9 AM - 6 PM",
+        "Children": true,
         "Prices": "$28-$12",
         "Adress":"6 avenue Henri Renard, 80120 Quend-Plage",
         "Phone":"03 22 20 48 52",
@@ -63,4 +63,4 @@
             "PrimaryFour": "../images/plage-voile.jpg"               
         }
     }
-]
+]}

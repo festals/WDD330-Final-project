@@ -1,0 +1,229 @@
+ {"activities":[
+ 
+    {   
+        "Genre": "Art",
+        "Name":"Pax",
+        "Description": "Movie Theatre",
+        "Hours": "10 AM - 8H30 PM ",
+        "Children": "yes",
+        "Prices": "$4-$5",
+        "Adress":"Place Charles de Gaulle,80120 Quend",
+        "Phone":"N/A",
+        "Website":"https://cinema-lepax.fr",
+        "Images": {
+            "PrimaryOne": "images/cinema-ext.jpg",
+            "PrimaryTwo": "images/cinema-int.jpg",
+            "PrimaryThree": "images/cinema-affiche.jpg",        
+            "PrimaryFour": "images/cinema-affiche.jpg"        
+        }
+
+    },
+    {
+        "Genre": "Art",
+        "Name":"Art le Quend",
+        "Description": "Art Galerie",
+        "Hours": "2 PM - 7 PM",
+        "Children": "yes",
+        "Prices": "Free entry",
+        "Adress":"Salle paroissiale 80120 Quend - Somme - Hauts-de-France",
+        "Phone":" 06 01 23 88 91",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/art-1.jpg",
+            "PrimaryTwo": "images/art-2.jpg",
+            "PrimaryThree": "images/art-3.jpg",        
+            "PrimaryFour": "images/art-3.jpg"        
+        }
+    
+    },
+    {
+        "Genre": "Shopping",
+        "Name":"Y&L",
+        "Description": "Women's Clothing Store",
+        "Hours": "10 AM - 5 PM ",
+        "Children": "yes",
+        "Prices": "$15-$40",
+        "Adress":"8 AV Vasseur, 80120 Quend",
+        "Phone":"03 22 19 08 84",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/femme.jpg",
+            "PrimaryTwo": "images/femme-1.jpg",
+            "PrimaryThree": "images/femme-2.jpg",
+            "PrimaryFour": "images/femme-3.jpg"                
+            }
+    
+    }, 
+    {
+        "Genre": "Shopping",
+        "Name":"Marché de Quend",
+        "Description": "Town Market",
+        "Hours": "6 AM - 2 PM",
+        "Children": "yes",
+        "Prices": "$3-$20",
+        "Adress":"17-7 AV. Foch,80120 Quend",
+        "Phone":"N/A",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/marche.jpg",
+            "PrimaryTwo": "images/marche-fruit.jpg",
+            "PrimaryThree": "images/marche-beignet.jpg" ,
+            "PrimaryFour": "images/marche-bois.jpg"               
+            }
+        
+    },
+    {
+        "Genre": "Shopping",
+        "Name":"Sport International Distribution",
+        "Description": "Sportswear Store",
+        "Hours": "10 AM - 5 PM",
+        "Children": "yes",
+        "Prices": "$5-$30",
+        "Adress":"28 av Vasseur, 80120 Quend",
+        "Phone":"03 22 28 49 71",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/sport-1.jpg",
+            "PrimaryTwo": "images/sport-2.jpg",
+            "PrimaryThree": "images/sport-3.jpg",
+            "PrimaryFour": "images/sport.jpg"                
+        }
+    
+    },
+    {
+        "Genre": "Restaurant",
+        "Name":"Jules",
+        "Description": "Family Restaurant",
+        "Hours": "11H30 AM - 9 PM",
+        "Children": "yes",
+        "Prices": "$20-$30",
+        "Adress":"72 Avenue Adéodat Vasseur, 80120 Quend-Plage",
+        "Phone":"06 13 57 31 00",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/fam-int.jpg",
+            "PrimaryTwo": "images/fam-plat.jpg",
+            "PrimaryThree": "images/fam-hamburger.jpg",       
+            "PrimaryFour": "images/fam-food.jpg"        
+            }
+    },
+    {
+        "Genre": "Restaurant",
+        "Name":"Le Nautilus",
+        "Description": "Fish Restaurant",
+        "Hours": "11H30 AM - 2 PM, 6 PM - 9 PM",
+        "Children": "no",
+        "Prices": "$30-$45",
+        "Adress":"81 Avenue Vasseur, 80120 Quend-Plage",
+        "Phone":"03 22 24 90 55",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/fish-ext.jpg",
+            "PrimaryTwo": "images/fish-huitre.jpg",
+            "PrimaryThree": "images/fish-moule.jpg",
+            "PrimaryFour": "images/fish-noix.jpg"                
+        }
+    },
+    { 
+        "Genre": "Restaurant",
+        "Name":"Babybouff",
+        "Description": "Ice Cream Shop",
+        "Hours": "10 AM - 1 AM",
+        "Children": "yes",
+        "Prices": "$2-$7",
+        "Adress":"57 Avenue Adeodat Vasseur, 80120 Quend-Plage",
+        "Phone":"06 75 87 67 10",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/glace-pot.jpg",
+            "PrimaryTwo": "images/glace-vitr.jpg",
+            "PrimaryThree": "images/glace-vitr-1.jpg",
+            "PrimaryFour": "images/glace.jpg"              
+        }
+    },
+    {
+        "Genre": "Restaurant",
+        "Name":"Le Napoli",
+        "Description": "Pizzeria",
+        "Hours": "1H30 AM - 8 PM",
+        "Children": "yes",
+        "Prices": "$12-$18",
+        "Adress":"52 avenue Vasseur, 80120 Quend-Plage France",
+        "Phone":" 06 75 19 77 34",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/pizza-long.jpg",
+            "PrimaryTwo": "images/pizza-huile.jpg",
+            "PrimaryThree": "images/pizza-ext.jpg",
+            "PrimaryFour": "images/pizza-four.jpg"               
+        }
+    },
+    {
+        "Genre": "Sport",
+        "Name":"Sentier du Royon",
+        "Description": "Hiking Road in the Sand",
+        "Hours": "All the Time",
+        "Children": "yes",
+        "Prices": "Free Entry",
+        "Adress":"Start at the Parking facing the Beach",
+        "Phone":"N/A",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/rando.jpg",
+            "PrimaryTwo": "images/rando-1.jpg",
+            "PrimaryThree": "images/rando-dune.jpg",       
+            "PrimaryFour": "images/rando-neige.jpg"        
+            }
+    },
+    {
+        "Genre": "Sport",
+        "Name":"Ozone",
+        "Description": "Sand Yachting School",
+        "Hours": "8 AM - 19 PM",
+        "Children": "yes",
+        "Prices": "$50-$150",
+        "Adress":"8 Rue Basile Capet , 80120 QUEND",
+        "Phone":"03 22 23 37 92",
+        "Website":"https://www.ozone-charavoile.com/",
+        "Images": {
+            "PrimaryOne": "images/char-groupe.jpg",
+            "PrimaryTwo": "images/char-groupe-1.jpg",
+            "PrimaryThree": "images/char-eau.jpg",
+            "PrimaryFour": "images/char-tombe.jpg"                
+        }
+    },
+    {
+        "Genre": "Sport",
+        "Name":"Arbres & Aventures",
+        "Description": "Tree Top Adventure Park",
+        "Hours": "9 AM - 6 PM",
+        "Children": "yes",
+        "Prices": "$28-$12",
+        "Adress":"6 avenue Henri Renard, 80120 Quend-Plage",
+        "Phone":"03 22 20 48 52",
+        "Website":"www.arbres-aventures.com",
+        "Images": {
+            "PrimaryOne": "images/accro-1.jpg",
+            "PrimaryTwo": "images/accro-2.jpg",
+            "PrimaryThree": "images/accro-3.jpg",
+            "PrimaryFour": "images/accro-4.jpg"              
+        }
+    },
+    {   
+        "Genre": "Sport",
+        "Name":"The Beach",
+        "Description": "The Beach with liveguard",
+        "Hours": "10 AM - 6 PM",
+        "Children": "yes",
+        "Prices": "Free Entry",
+        "Adress":"AV de la Mer, 80120 Quend-Plage",
+        "Phone":" N/A",
+        "Website":"N/A",
+        "Images": {
+            "PrimaryOne": "images/plage-surf.jpg",
+            "PrimaryTwo": "images/plage-paddle.jpg",
+            "PrimaryThree": "images/plage-sauveteur.jpg",
+            "PrimaryFour": "images/plage-voile.jpg"               
+        }
+    }
+]}

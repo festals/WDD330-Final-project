@@ -1,9 +1,9 @@
-[
+{"restaurant":[
     {
         "Name":"Jules",
         "Description": "Family Restaurant",
-        "Open Hours": "11H30 AM - 9 PM",
-        "For children": true,
+        "Hours": "11H30 AM - 9 PM",
+        "Children": true,
         "Prices": "$20-$30",
         "Adress":"72 Avenue Adéodat Vasseur, 80120 Quend-Plage",
         "Phone":"06 13 57 31 00",
@@ -18,8 +18,8 @@
     {
         "Name":"Le Nautilus",
         "Description": "Fish Restaurant",
-        "Open Hours": "11H30 AM - 2 PM, 6 PM - 9 PM",
-        "For children": false,
+        "Hours": "11H30 AM - 2 PM, 6 PM - 9 PM",
+        "Children": false,
         "Prices": "$30-$45",
         "Adress":"81 Avenue Vasseur, 80120 Quend-Plage",
         "Phone":"03 22 24 90 55",
@@ -34,8 +34,8 @@
    {
         "Name":"Babybouff",
         "Description": "Ice Cream Shop",
-        "Open Hours": "10 AM - 1 AM",
-        "For children": true,
+        "Hours": "10 AM - 1 AM",
+        "Children": true,
         "Prices": "$2-$7",
         "Adress":"57 Avenue Adeodat Vasseur, 80120 Quend-Plage",
         "Phone":"06 75 87 67 10",
@@ -50,8 +50,8 @@
     {
         "Name":"Le Napoli",
         "Description": "Pizzeria",
-        "Open Hours": "1H30 AM - 8 PM",
-        "For children": true,
+        "Hours": "1H30 AM - 8 PM",
+        "Children": true,
         "Prices": "$12-$18",
         "Adress":"52 avenue Vasseur, 80120 Quend-Plage France",
         "Phone":" 06 75 19 77 34",
@@ -63,4 +63,4 @@
             "PrimaryFour": "../images/pizza-four.jpg"               
         }
     }
-]
+]}

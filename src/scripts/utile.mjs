@@ -15,9 +15,24 @@ export function renderWithTemplate(
     }
 }
   
+export function renderListWithTemplate(
+    templateFn,
+    parentElement,
+    list,
+    position = "afterbegin",
+    clear = false
+  ) {
+    const htmlStrings = list.map(templateFn);
+    // if clear is true we need to clear out the contents of the parent.
+    if (clear === "true") {
+      parentElement.innerHTML = "";
+    }
+    parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
+}
+
 export async function loadHeaderFooter(){
-const headerTemplate = await loadTemplate("header.html");
-const footerTemplate = await loadTemplate("footer.html");
+const headerTemplate = await loadTemplate("partials/header.html");
+const footerTemplate = await loadTemplate("partials/footer.html");
 
 const header = document.getElementById("mainheader");
 const footer = document.getElementById("mainfooter");

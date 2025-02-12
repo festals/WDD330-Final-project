@@ -1,9 +1,9 @@
-[
+{"shopping":[
     {
         "Name":"Y&L",
         "Description": "Women's Clothing Store",
-        "Open Hours": "10 AM - 5 PM ",
-        "For children": true,
+        "Hours": "10 AM - 5 PM ",
+        "Children": true,
         "Prices": "$15-$40",
         "Adress":"8 AV Vasseur, 80120 Quend",
         "Phone":"03 22 19 08 84",
@@ -19,8 +19,8 @@
     {
         "Name":"Marché de Quend",
         "Description": "Town Market",
-        "Open Hours": "6 AM - 2 PM",
-        "For children": true,
+        "Hours": "6 AM - 2 PM",
+        "Children": true,
         "Prices": "$3-$20",
         "Adress":"17-7 AV. Foch,80120 Quend",
         "Phone":"N/A",
@@ -36,8 +36,8 @@
     {
         "Name":"Sport International Distribution",
         "Description": "Sportswear Store",
-        "Open Hours": "10 AM - 5 PM",
-        "For children": true,
+        "Hours": "10 AM - 5 PM",
+        "Children": true,
         "Prices": "$5-$30",
         "Adress":"28 av Vasseur, 80120 Quend",
         "Phone":"03 22 28 49 71",
@@ -50,4 +50,4 @@
             }
     
         }
-]
+]}
