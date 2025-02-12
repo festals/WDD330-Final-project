@@ -148,6 +148,36 @@ main h1{
 }
   
 
+/*activity list*/
+.activity-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+  
+.activity-list a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+  
+/* Styles for activity lists */
+.activity-card {
+    flex: 1 1 45%;
+    margin: 0.25em;
+    padding: 0.5em;
+    border: 1px solid var(--light-grey);
+    max-width: 250px;
+}
+  
+.activity-card h3,
+.activity-card p {
+    margin: 0.5em 0;
+}
+ 
+  
+
 /*rating form*/ 
 #rating {
     background-color: var(--light-brown);

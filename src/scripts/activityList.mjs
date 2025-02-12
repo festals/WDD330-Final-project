@@ -24,11 +24,13 @@ const displayActivity = (activities) => {
         const activityPrice = document.createElement("p")
         const activityHours = document.createElement("p")
 
+        card.setAttribute("class","activity-card");
+
         activityImg.setAttribute("src", activity.Images.PrimaryOne);
         activityImg.setAttribute("alt", activity.Name);
         activityImg.setAttribute("loading", "lazy");
-        // memoryImg.setAttribute("width", "400");
-        // memoryImg.setAttribute("height", "400");
+        activityImg.setAttribute("width", "200");
+        activityImg.setAttribute("height", "133");
         
     
         activityName.innerHTML = activity.Name;
@@ -45,6 +47,9 @@ const displayActivity = (activities) => {
         activityCard.appendChild(card);
     });
 }
+
+
+
 
     
 
