@@ -220,7 +220,7 @@ main h1{
     font-family: var(--paragraph-font);
 }
 
-#rating  button {
+#rating  button{
     padding: 10px;
     border: none;
     background-color: var(--blue);
@@ -232,6 +232,39 @@ main h1{
 }
 
 #rating  button:hover {
+    background-color: var(--brown);
+    color: var(--blue);
+}
+
+/*thnks page*/
+.thank-you-container {
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#activityName{
+    font-family: var(--paragraph-font);
+    padding: 15px;
+}
+
+.thank-you-container a{
+    padding: 10px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+
+.thank-you-container a:hover{
     background-color: var(--brown);
     color: var(--blue);
 }

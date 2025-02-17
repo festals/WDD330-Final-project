@@ -71,7 +71,7 @@
         <div id="rating">
             <h2>Rate the Activities!</h2>
             <p>Note 1 to 5 your favorite place to let people know the best place to go.</p>
-            <form action="thank-you.html" method="POST">
+            <form id="ratings" action="rating.html" method="get">
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <label for="activities">Choose an activity:</label>
                 <select id="activities" name="activities" required>
@@ -89,7 +89,7 @@
                     <option value="le napoli">Le Napoli</option>
                     <option value="le nautilus">Le Nautilus</option>
                 </select>
-                <input type="number" name="note" max="5" min="1" placeholder="1 to 5" required>
+                <input id="note" type="number" name="note" max="5" min="1" placeholder="1 to 5" required>
                 <button type="submit">Rate them</button>
             </form>
         </div>

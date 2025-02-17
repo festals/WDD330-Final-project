@@ -1,4 +1,5 @@
-import { getDates, loadHeaderFooter } from "./utile.mjs";
+import { getDates, loadHeaderFooter, formRating } from "./utile.mjs";
 
 loadHeaderFooter();
 getDates();
+formRating();

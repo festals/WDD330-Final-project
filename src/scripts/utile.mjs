@@ -51,3 +51,14 @@ const lastModified = document.lastModified
 dateContainer.innerHTML=year;
 lastModifiedContainer.innerHTML= lastModified;
 }
+
+export function formRating(){
+  document.getElementById("ratings").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const activityName = document.getElementById("activities").value;
+    localStorage.setItem("activityName", activityName);
+    const note = document.getElementById("note").value;
+    localStorage.setItem("note", note);
+    window.location.href = "rating.html";
+});
+}
