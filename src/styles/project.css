@@ -8,6 +8,10 @@
     --paragraph-font: 'Lato';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: var(--brown);
     display:flex;
@@ -268,6 +272,52 @@ main h1{
     background-color: var(--brown);
     color: var(--blue);
 }
+
+
+/* Modal Styles */
+#activity-info {
+    width : 80%;
+    border-radius: 15px;
+    background-color: var(--light-brown);
+}
+
+#activity-info h2 {
+    margin-top : 50px;
+    margin-left:10px;
+    font-family: var(--heading-font);
+}
+
+#activity-info img {
+    width:80%;
+    margin-left : 50px;
+    border-radius : 1rem;
+}
+
+#activity-info p {
+    text-align : center;
+}
+
+
+#closeModal {
+    position : absolute;
+    top : 23px;
+    right : 23px;
+    padding : 0.5rem 1rem;
+    justify-content : center;
+    align-items : center;
+    cursor : pointer;    
+    border-radius: 9px;
+}
+
+#closeModal:hover {
+    color : var(--brown);
+    background-color: var(--blue);
+}
+
+::backdrop {
+    background-color : rgba(73, 119, 245, 0.297);
+}
+
 
 
 /* footer */

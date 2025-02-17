@@ -1,7 +1,7 @@
  {"activities":[
  
     {   
-        "Genre": "Art",
+        "category": "Art",
         "Name":"Pax",
         "Description": "Movie Theatre",
         "Hours": "10 AM - 8H30 PM ",
@@ -19,7 +19,7 @@
 
     },
     {
-        "Genre": "Art",
+        "category": "Art",
         "Name":"Art le Quend",
         "Description": "Art Galerie",
         "Hours": "2 PM - 7 PM",
@@ -37,7 +37,7 @@
     
     },
     {
-        "Genre": "Shopping",
+        "category": "Shopping",
         "Name":"Y&L",
         "Description": "Women's Clothing Store",
         "Hours": "10 AM - 5 PM ",
@@ -55,7 +55,7 @@
     
     }, 
     {
-        "Genre": "Shopping",
+        "category": "Shopping",
         "Name":"Marché de Quend",
         "Description": "Town Market",
         "Hours": "6 AM - 2 PM",
@@ -73,7 +73,7 @@
         
     },
     {
-        "Genre": "Shopping",
+        "category": "Shopping",
         "Name":"Sport International Distribution",
         "Description": "Sportswear Store",
         "Hours": "10 AM - 5 PM",
@@ -91,7 +91,7 @@
     
     },
     {
-        "Genre": "Restaurant",
+        "category": "Restaurant",
         "Name":"Jules",
         "Description": "Family Restaurant",
         "Hours": "11H30 AM - 9 PM",
@@ -108,7 +108,7 @@
             }
     },
     {
-        "Genre": "Restaurant",
+        "category": "Restaurant",
         "Name":"Le Nautilus",
         "Description": "Fish Restaurant",
         "Hours": "11H30 AM - 2 PM, 6 PM - 9 PM",
@@ -125,7 +125,7 @@
         }
     },
     { 
-        "Genre": "Restaurant",
+        "category": "Restaurant",
         "Name":"Babybouff",
         "Description": "Ice Cream Shop",
         "Hours": "10 AM - 1 AM",
@@ -142,7 +142,7 @@
         }
     },
     {
-        "Genre": "Restaurant",
+        "category": "Restaurant",
         "Name":"Le Napoli",
         "Description": "Pizzeria",
         "Hours": "1H30 AM - 8 PM",
@@ -159,7 +159,7 @@
         }
     },
     {
-        "Genre": "Sport",
+        "category": "Sport",
         "Name":"Sentier du Royon",
         "Description": "Hiking Road in the Sand",
         "Hours": "All the Time",
@@ -176,7 +176,7 @@
             }
     },
     {
-        "Genre": "Sport",
+        "category": "Sport",
         "Name":"Ozone",
         "Description": "Sand Yachting School",
         "Hours": "8 AM - 19 PM",
@@ -193,7 +193,7 @@
         }
     },
     {
-        "Genre": "Sport",
+        "category": "Sport",
         "Name":"Arbres & Aventures",
         "Description": "Tree Top Adventure Park",
         "Hours": "9 AM - 6 PM",
@@ -210,7 +210,7 @@
         }
     },
     {   
-        "Genre": "Sport",
+        "category": "Sport",
         "Name":"The Beach",
         "Description": "The Beach with liveguard",
         "Hours": "10 AM - 6 PM",
