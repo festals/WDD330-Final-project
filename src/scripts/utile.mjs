@@ -62,3 +62,40 @@ export function formRating(){
     window.location.href = "rating.html";
 });
 }
+
+// Function to check if the activity is open based on hours
+export const checkIfOpen = (hours) => {
+  const currentTime = new Date();
+  const currentHour = currentTime.getHours();
+  const currentMinute = currentTime.getMinutes();
+  const currentTimeInMinutes = currentHour * 60 + currentMinute;  // Convert current time to minutes
+
+  // Assuming hours are in format '09:00-17:00'
+  const [openingTime, closingTime] = hours.split('-');
+  
+  const [openHour, openMinute] = openingTime.split(':').map(Number);
+  const [closeHour, closeMinute] = closingTime.split(':').map(Number);
+
+  const openingTimeInMinutes = openHour * 60 + openMinute;  // Convert opening time to minutes
+  const closingTimeInMinutes = closeHour * 60 + closeMinute;  // Convert closing time to minutes
+
+  return currentTimeInMinutes >= openingTimeInMinutes && currentTimeInMinutes <= closingTimeInMinutes;
+};
+
+// Function to check if the wind conditions are strong enough for the activity
+export const isWindStrongEnough = (activityName, windSpeed, windDeg) => {
+  if (activityName === "Ozone") {
+      const minWindSpeed = 3.06;  // wind speed required for "Ozone" activity in km/h
+      const maxWindSpeed = 15;
+      const favorableWindDirection = 165 || 15;  
+
+      // Check if wind speed is above the minimum threshold
+      const isWindSpeedGood = windSpeed >= minWindSpeed && windSpeed <= maxWindSpeed ;
+
+      // Check if the wind is coming from a favorable direction (within 30 degrees of the favorable direction)
+      const isWindDirectionGood = Math.abs(windDeg - favorableWindDirection) <= 30;
+
+      return isWindSpeedGood && isWindDirectionGood;
+  }
+  return true;
+};

@@ -308,7 +308,20 @@ main h1{
 
 #activity-info p {
     text-align : center;
+    font-family: var(--paragraph-font);
 }
+
+#activity-info p.open {
+    font-family: var(--heading-font);
+    animation : cardsAni  2s;
+}
+
+@keyframes cardsAni {
+    75% {
+      transform: scale( 1.2);
+    }  
+}
+  
 
 
 #closeModal {

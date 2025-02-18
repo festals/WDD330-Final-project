@@ -1,5 +1,31 @@
+import { checkIfOpen, isWindStrongEnough } from "./utile.mjs";
 
+const urlWeather = "https://api.openweathermap.org/data/2.5/weather?lat=50.32&lon=1.54&units=metric&appid=37c35753f34f3a37825f8d6a42ba3c16";
 const activitiesJSON = "json/activities.json";
+
+// Function to fetch weather data
+async function apiFetch(urlWeather, activity) {
+    try {
+        const response = await fetch(urlWeather);
+        if (response.ok) {
+            const data = await response.json();
+            
+            // Assuming wind data is in the format data.wind.speed and data.wind.deg
+            const windSpeed = data.wind.speed;
+            const windDeg = data.wind.deg;
+  
+            // Check if the wind conditions are strong enough for the activity
+            const isWindGoodForActivity = isWindStrongEnough(activity.Name, windSpeed, windDeg);
+  
+            // Proceed to display the activity info with wind status
+            displayActivityInfo(activity, isWindGoodForActivity); // Pass the wind status to the display function
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 export async function getActivitiesInfo() {
     try {
@@ -101,7 +127,7 @@ const displayActivity = (activities) => {
 };
 
 
-const displayActivityInfo = (activity) => {
+const displayActivityInfo = (activity, isWindGoodForActivity) => {
     const modal = document.getElementById("activity-info");
 
     // Collect all the images into an array
@@ -117,12 +143,21 @@ const displayActivityInfo = (activity) => {
         imageHtml += `<img src="${img}" class="slideshow-image" style="display: ${index === 0 ? 'block' : 'none'}" width="400">`;
     });
 
+    // Determine if the activity is open or closed
+    const isOpen = checkIfOpen(activity.Hours);
+    
+    // If the activity is "Ozone", display if the wind conditions are good
+    const windStatus = activity.Name === "Ozone" ? (isWindGoodForActivity ? "Wind conditions are suitable" : "Wind conditions are not suitable") : "";
+
     modal.innerHTML = `
     <button id="closeModal">X</button>
     <h2>${activity.Name}</h2>
     <div id="slideshow">
         ${imageHtml}
-    </div>    
+    </div> 
+
+    <p class="open"> ${isOpen ? 'Open' : 'Closed'}</p>
+    ${activity.Name === "Ozone" ? `<p class="open">Wind Status: ${windStatus}</p>` : ''}
     <p>Hours: ${activity.Hours}<br>
     Prices: ${activity.Prices}<br>
     Phone: ${activity.Phone}<br>
@@ -162,3 +197,5 @@ const displayActivityInfo = (activity) => {
     });
 }
 
+
+// rating into the details info
