@@ -166,18 +166,31 @@ main h1{
     color: var(--dark-grey);
 }
   
-/* Styles for activity lists */
-.activity-card {
-    flex: 1 1 45%;
-    margin: 0.25em;
-    padding: 0.5em;
-    border: 1px solid var(--light-grey);
-    max-width: 250px;
+/* Apply animation to each image */
+
+.resto{
+    animation : cardsAnimation  2s;
 }
-  
-.activity-card h3,
-.activity-card p {
-    margin: 0.5em 0;
+.sport{
+    animation : cardsAnimation  2.5s;
+}
+.shop{
+    animation : cardsAnimation  3s;
+}
+.art{
+    animation : cardsAnimation  3.5s;
+}
+
+/* Define the keyframe animation */
+@keyframes cardsAnimation {
+  75% {
+    transform: scale( 0.75);
+  }
+
+  50% {
+    transform: scale( 1);
+  }
+
 }
  
   

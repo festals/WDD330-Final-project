@@ -104,10 +104,25 @@ const displayActivity = (activities) => {
 const displayActivityInfo = (activity) => {
     const modal = document.getElementById("activity-info");
 
+    // Collect all the images into an array
+    const images = [
+    activity.Images.PrimaryOne,
+    activity.Images.PrimaryTwo,
+    activity.Images.PrimaryThree,
+    activity.Images.PrimaryFour
+    ];
+
+    let imageHtml = '';
+    images.forEach((img, index) => {
+        imageHtml += `<img src="${img}" class="slideshow-image" style="display: ${index === 0 ? 'block' : 'none'}" width="400">`;
+    });
+
     modal.innerHTML = `
     <button id="closeModal">X</button>
     <h2>${activity.Name}</h2>
-    <img src="${activity.Images.PrimaryTwo}" width="400">
+    <div id="slideshow">
+        ${imageHtml}
+    </div>    
     <p>Hours: ${activity.Hours}<br>
     Prices: ${activity.Prices}<br>
     Phone: ${activity.Phone}<br>
@@ -119,6 +134,18 @@ const displayActivityInfo = (activity) => {
 
     modal.showModal();
 
+    // Slideshow logic
+    let currentImageIndex = 0;
+    const imagesArray = document.querySelectorAll('.slideshow-image');
+    const totalImages = imagesArray.length;
+
+    const changeImage = () => {
+        imagesArray[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        imagesArray[currentImageIndex].style.display = 'block';
+    };
+
+    setInterval(changeImage, 2000);  // Change image every 3 seconds
 
     // Close the modal when the user clicks on the close button
     const closeModal = document.getElementById("closeModal");

@@ -14,7 +14,7 @@
             "PrimaryOne": "images/cinema-ext.jpg",
             "PrimaryTwo": "images/cinema-int.jpg",
             "PrimaryThree": "images/cinema-affiche.jpg",        
-            "PrimaryFour": "images/cinema-affiche.jpg"        
+            "PrimaryFour": "images/cinema-ecran.jpg"        
         }
 
     },
@@ -32,7 +32,7 @@
             "PrimaryOne": "images/art-1.jpg",
             "PrimaryTwo": "images/art-2.jpg",
             "PrimaryThree": "images/art-3.jpg",        
-            "PrimaryFour": "images/art-3.jpg"        
+            "PrimaryFour": "images/art.jpg"        
         }
     
     },
