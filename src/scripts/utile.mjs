@@ -87,7 +87,7 @@ export const isWindStrongEnough = (activityName, windSpeed, windDeg) => {
   if (activityName === "Ozone") {
       const minWindSpeed = 3.06;  // wind speed required for "Ozone" activity in km/h
       const maxWindSpeed = 15;
-      const favorableWindDirection = 165 || 15;  
+      const favorableWindDirection = 165;  
 
       // Check if wind speed is above the minimum threshold
       const isWindSpeedGood = windSpeed >= minWindSpeed && windSpeed <= maxWindSpeed ;
@@ -99,3 +99,4 @@ export const isWindStrongEnough = (activityName, windSpeed, windDeg) => {
   }
   return true;
 };
+

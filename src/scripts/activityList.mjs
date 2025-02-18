@@ -167,6 +167,12 @@ const displayActivityInfo = (activity, isWindGoodForActivity) => {
     Description: ${activity.Description}</p>
     `;
 
+    // <!-- Display Reviews and Rating -->
+    // <p>Number of Reviews: ${reviews}</p>
+    // <p>Rating: ${rating}</p>
+
+
+
     modal.showModal();
 
     // Slideshow logic
