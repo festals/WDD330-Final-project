@@ -151,20 +151,6 @@ main h1{
     transform : scale(1.09);
 }
   
-
-/*activity list*/
-.activity-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-}
-  
-.activity-list a {
-    text-decoration: none;
-    color: var(--dark-grey);
-}
   
 /* Apply animation to each image */
 
@@ -285,6 +271,23 @@ main h1{
     background-color: var(--brown);
     color: var(--blue);
 }
+
+
+/*activity list*/
+.activity-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.activity-list li{
+    list-style-type: none;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+
 
 
 /* Modal Styles */

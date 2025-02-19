@@ -1,4 +1,4 @@
-import { checkIfOpen, isWindStrongEnough } from "./utile.mjs";
+import { checkIfOpen, isWindStrongEnough, getTideData } from "./utile.mjs";
 
 const urlWeather = "https://api.openweathermap.org/data/2.5/weather?lat=50.32&lon=1.54&units=metric&appid=37c35753f34f3a37825f8d6a42ba3c16";
 const activitiesJSON = "json/activities.json";
@@ -25,7 +25,7 @@ async function apiFetch(urlWeather, activity) {
     } catch (error) {
       console.log(error);
     }
-  }
+};
 
 export async function getActivitiesInfo() {
     try {
@@ -40,6 +40,7 @@ export async function getActivitiesInfo() {
         console.log(error);
     };
 };
+
 
 const displayActivity = (activities) => {
     // Group activities by category
@@ -126,8 +127,7 @@ const displayActivity = (activities) => {
     }
 };
 
-
-const displayActivityInfo = (activity, isWindGoodForActivity) => {
+const displayActivityInfo = async (activity, isWindGoodForActivity) => {
     const modal = document.getElementById("activity-info");
 
     // Collect all the images into an array
@@ -149,6 +149,16 @@ const displayActivityInfo = (activity, isWindGoodForActivity) => {
     // If the activity is "Ozone", display if the wind conditions are good
     const windStatus = activity.Name === "Ozone" ? (isWindGoodForActivity ? "Wind conditions are suitable" : "Wind conditions are not suitable") : "";
 
+    // Check if the activity is a beach activity 
+    const isBeachActivity = activity.Name === "The Beach" || activity.Name === "Ozone";
+
+    let tideInfo = '';
+    if (isBeachActivity) {
+        tideInfo = await getTideData();
+    } else {
+        tideInfo = 'Tide data not available for this activity'; // No tide data for non-beach activities
+    }
+
     modal.innerHTML = `
     <button id="closeModal">X</button>
     <h2>${activity.Name}</h2>
@@ -165,13 +175,12 @@ const displayActivityInfo = (activity, isWindGoodForActivity) => {
     Mail: ${activity.Mail}<br>
     Children Friendly: ${activity.Children}<br>
     Description: ${activity.Description}</p>
+
+    <!-- Display Reviews and Rating -->
+    <p>Number of Reviews: N/A<br>
+    Average Rating: N/A</p> 
+    ${tideInfo}  
     `;
-
-    // <!-- Display Reviews and Rating -->
-    // <p>Number of Reviews: ${reviews}</p>
-    // <p>Rating: ${rating}</p>
-
-
 
     modal.showModal();
 
@@ -202,6 +211,3 @@ const displayActivityInfo = (activity, isWindGoodForActivity) => {
         }
     });
 }
-
-
-// rating into the details info

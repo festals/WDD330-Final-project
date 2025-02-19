@@ -1,5 +1,4 @@
 
-
 const activityName = localStorage.getItem("activityName");
 const note = localStorage.getItem("note");
 if (activityName) {

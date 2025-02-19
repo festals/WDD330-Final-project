@@ -100,3 +100,72 @@ export const isWindStrongEnough = (activityName, windSpeed, windDeg) => {
   return true;
 };
 
+export const getTideData = async () => {
+  const url = `https://www.worldtides.info/api/v3?heights&extremes&date=2025-02-19&lat=50.32&lon=1.54&key=c0c99155-b461-42cd-a3e9-31b74a758e2d`;
+
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // If tide data exists, process the tides for today
+    if (data.heights && data.heights.length > 0) {
+        // Find the closest tide data point to the current time
+        const now = Date.now();  // Get the current time in milliseconds
+
+        // Sort the tides by time (ascending)
+        data.heights.sort((a, b) => a.dt - b.dt);
+
+        // Find the closest tide (before or after the current time)
+        let closestTide = null;
+        let tideStatus = "Unknown";
+        let previousTideHeight = null;
+
+        for (let i = 0; i < data.heights.length; i++) {
+            const tide = data.heights[i];
+            const tideTime = new Date(tide.dt * 1000);  // Convert UNIX timestamp to date
+
+            // Find the closest tide time
+            if (tideTime > now) {
+                closestTide = tide;
+                break;
+            }
+            previousTideHeight = tide.height;
+        }
+
+        // If no tide after the current time, use the last tide (before the current time)
+        if (!closestTide && previousTideHeight) {
+            closestTide = data.heights[data.heights.length - 1];  // Use the last tide for the day
+        }
+
+        // Determine if the tide is ascending, descending or constant
+        if (closestTide && previousTideHeight !== null) {
+            const tideHeight = closestTide.height;  // Get the tide height
+            if (tideHeight > previousTideHeight) {
+                tideStatus = "Ascending (Rising)";
+            } else if (tideHeight < previousTideHeight) {
+                tideStatus = "Descending (Falling)";
+            } else {
+                tideStatus = "Constant";
+            }
+
+            const tideTime = new Date(closestTide.dt * 1000);  // Convert UNIX timestamp to date
+            const tideTimeFormatted = tideTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });  // Get only the time in HH:MM format
+
+            return `
+                <p>Tide Time: ${tideTimeFormatted}<br>
+                Height: ${closestTide.height} meters<br>
+                Status: ${tideStatus}</p>
+            `;
+        } else {
+            return "No tide data available for current time.";
+        }
+    } else {
+        return "Error fetching tide data.";
+    }
+  } catch (error) {
+    console.error("Error fetching tide data:", error);
+    return "Error fetching tide data";
+  }
+};
+
