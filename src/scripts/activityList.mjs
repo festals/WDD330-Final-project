@@ -112,15 +112,17 @@ const displayActivity = (activities) => {
             activityList.appendChild(card);
         });
 
+        const iframeContainer = document.createElement("div");
+        iframeContainer.setAttribute("class", "iframe-container");
+
         // Add iframe at the end of each section (not card)
         const iframe = document.createElement("iframe");
         iframe.setAttribute("src", iframeSources[category]); // Get the iframe source for this section
-        iframe.setAttribute("width", "600");
-        iframe.setAttribute("height", "400");
         iframe.setAttribute("frameborder", "0");
         iframe.setAttribute("allowfullscreen", "");
 
-        categorySection.appendChild(iframe);
+        iframeContainer.appendChild(iframe);
+        categorySection.appendChild(iframeContainer);
 
         // Append the category section to the main container
         activityContainer.appendChild(categorySection);

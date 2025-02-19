@@ -171,8 +171,22 @@ main h1{
   }
 
 }
- 
   
+.iframe-container {
+    position: relative;
+    width: 100%;               /* Full width */
+    padding-bottom: 56.25%;     /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 85%;               /* Take up full width */
+    height: 85%;              /* Maintain aspect ratio */
+}
 
 /*rating form*/ 
 #rating {
@@ -269,15 +283,16 @@ main h1{
 /*activity list*/
 .activity-list {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     padding: 0;
+    margin: 10px;
+    align-self: center;
 }
 
 .activity-list li{
     list-style-type: none;
     padding: 10px;
-    /* text-align: center; */
 }
 
 
